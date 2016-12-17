@@ -9,8 +9,11 @@ class MainController < ApplicationController
   	@place = Place.find(params[:id])
   end
 
-  def categories
+  def selected_category
   	@places = Place.where(category_id: params[:id]).paginate(page:params[:page])
+    respond_to do |format|
+      format.js {}
+    end
   end
 
 end

@@ -1,0 +1,14 @@
+<div class="col-md-12">
+<%= will_paginate @places %>
+<div class="col-md-12">
+	<% @places.each do |place| %>
+		<div class="place col-md-3">
+			<%= link_to place.title, place_path(place.id) %> <br/>
+			<%= place.description %> <br/>
+			Rating: <%= place.rating %> <br/>
+			(<%= place.rating %>, <%= place.reviews.count %> reviews) <br/>
+		</div>
+	<% end %>
+</div>
+<%= will_paginate @places %>
+</div>

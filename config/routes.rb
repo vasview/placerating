@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get "place/:id" => 'main#show' , as: :place
 
+  get "category/:id" => 'main#selected_category', as: :category
+
   resources :places, only: [:new, :create, :destroy]
 
   devise_for :users

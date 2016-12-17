@@ -1,21 +1,10 @@
 <h1>All places</h1>
-<p>Select category: All,
+<p>Select category: <%= link_to "All,", root_path %>
 <% @categories.each do |cat| %>
-	<%= link_to cat.name, root_path(@places.where(category_id: cat.id)) %>
+	<%= link_to cat.name + ',', category_path(cat.id), remote: true %>
 <% end %>
 </p>
-
-<%= will_paginate @places %>
-
-<div class="places col-md-12">
-
-<% @places.each do |place| %>
-<div class="place col-md-3">
-	<%= link_to place.title, place_path(place.id) %> <br/>
-	<%= place.description %> <br/>
-	Rating: <%= place.rating %> <br/>
-	(<%= place.rating %>, <%= place.reviews.count %> reviews)
+<div class="places">
+	<%= render 'places_categories' %>
 </div>
-<% end %>
-</div>
-<%= will_paginate @places %>
+
