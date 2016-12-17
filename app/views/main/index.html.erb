@@ -1,2 +1,20 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+<h1>All places</h1>
+<p>Select category: All,
+<% @categories.each do |cat| %>
+	<%= link_to(cat.name + ',') %>
+<% end %>
+</p>
+
+<%= will_paginate @places %>
+
+<div class="places col-md-12">
+
+<% @places.each do |place| %>
+<div class="place col-md-3">
+	<%= link_to place.title, place_path(place.id) %> <br/>
+	<%= place.description %> <br/>
+	Rating: <%= place.rating %>
+</div>
+<% end %>
+</div>
+<%= will_paginate @places %>

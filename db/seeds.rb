@@ -22,10 +22,18 @@ end
 role = Role.where(name: 'admin')
 User.create(name: 'admin', email: 'admin@example.com', role_id: '2', active: true, password: '123456', password_confirmation: '123456')
 
-#create Categories
+# create Categories
 
 categories = ['Restaurants', 'Cafes', 'Pubs', 'Taverns']
 
 categories.each do |name|
 	Category.create(name: name)
 end	
+
+# Create Places
+
+40.times do
+    Place.create( title:   	  Faker::Company.name,
+                description:  Faker::Lorem.sentence,
+                category_id:  rand(1..categories.size))
+end
