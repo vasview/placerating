@@ -17365,3 +17365,1240 @@ Processing by PlacesController#new as HTML
   Rendered places/new.html.erb within layouts/application (5.2ms)
   Rendered layouts/application/_navbar.html.erb (0.5ms)
 Completed 200 OK in 127ms (Views: 125.8ms | ActiveRecord: 0.3ms)
+  [1m[35mPlace Load (0.4ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Load (0.5ms)[0m  [1mSELECT "images".* FROM "images" WHERE "images"."place_id" = ?[0m  [[nil, 1]]
+  [1m[35mImage Load (0.4ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mImage Load (0.4ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  [1m[36mImage Load (0.1ms)[0m  [1mSELECT "images".* FROM "images"[0m
+  [1m[35mImage Load (0.5ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+
+
+Started GET "/places/new" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#new as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered places/_place_form.html.erb (51.4ms)
+  Rendered places/new.html.erb within layouts/application (56.2ms)
+  Rendered layouts/application/_navbar.html.erb (1.1ms)
+Completed 200 OK in 479ms (Views: 457.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/application.self-63d967674ba2d31cf0182f8a8025705147d5c3c1115f4add611c9736f75082e6.css?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:13 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-17 18:32:14 +0600
+
+
+Started POST "/places" for 127.0.0.1 at 2016-12-17 18:32:46 +0600
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JoDxcMU7B3lGUwEI/AxbqtF9acNrAtxvB/wI6SG29HLLj9t0Wwy9qXeOzb8B6CA5QM4cD2RASIz1ClPkTpAfHA==", "place"=>{"title"=>"Кафе Едим", "category_id"=>"2", "description"=>"И мы в него ходим", "user_id"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f0ef046ed70 @tempfile=#<Tempfile:/tmp/RackMultipart20161217-29611-6bscsn.png>, @original_filename="traveller_latter_singapour.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"traveller_latter_singapour.png\"\r\nContent-Type: image/png\r\n">, "eula"=>"1"}, "commit"=>"Create Place"}
+Unpermitted parameters: image, eula
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "places" ("title", "description", "category_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Кафе Едим"], ["description", "И мы в него ходим"], ["category_id", 2], ["user_id", 2], ["created_at", "2016-12-17 12:32:46.729346"], ["updated_at", "2016-12-17 12:32:46.729346"]]
+  [1m[35m (154.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 160ms (ActiveRecord: 155.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:32:46 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 4]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 6]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 7]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 8]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 9]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 11]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 12]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 13]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 14]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 15]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 16]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 17]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 18]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 19]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 20]]
+  Rendered main/index.html.erb within layouts/application (33.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/application/_navbar.html.erb (1.4ms)
+Completed 200 OK in 117ms (Views: 113.9ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-17 18:33:16 +0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uO80Qg5vo2BhLmA74N31u5bnCe+sek3qSpIRmsL9zAhV4B5GkFgZsFDzrIwdOY4oB1R8I6M42Qm4ZEqXrdsnZg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:33:16 +0600
+Processing by MainController#index as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?[0m  [["approved", "t"]]
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0  [["approved", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 8]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 9]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 11]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 12]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 13]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 14]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 15]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 16]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 17]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 18]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 19]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 20]]
+  Rendered main/index.html.erb within layouts/application (18.0ms)
+  Rendered layouts/application/_navbar.html.erb (3.1ms)
+Completed 200 OK in 112ms (Views: 109.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-17 18:33:18 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/devise-i18n-1.1.0/app/views/devise/sessions/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 115ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-12-17 18:33:30 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"embEenl3TH2fDbE/W67WkP2pLLz10HVMZB4IvAoG2tzI0ypDR1+TtxvwntB+FdW8QO/NEef+6Twl1I2gQuasPQ==", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "admin@example.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2016-12-17 12:33:30.416022"], ["sign_in_count", 2], ["updated_at", "2016-12-17 12:33:30.417376"], ["id", 5]]
+  [1m[35m (40.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 198ms (ActiveRecord: 40.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:33:30 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 8]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 9]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 10]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 12]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 13]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 14]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 15]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 16]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 17]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 18]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 19]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 20]]
+  Rendered main/index.html.erb within layouts/application (20.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/application/_navbar.html.erb (1.2ms)
+Completed 200 OK in 102ms (Views: 99.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-12-17 18:33:35 +0600
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activeadmin-1.0.0.pre4/app/views/active_admin/page/index.html.arb (67.9ms)
+Completed 200 OK in 85ms (Views: 71.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/places" for 127.0.0.1 at 2016-12-17 18:33:38 +0600
+Processing by Admin::PlacesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "places" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "places" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "places"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "places" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places"  ORDER BY "places"."id" desc LIMIT 30 OFFSET 0[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mReview Load (0.4ms)[0m  SELECT "reviews".* FROM "reviews"
+  [1m[36mImage Load (0.1ms)[0m  [1mSELECT "images".* FROM "images"[0m
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activeadmin-1.0.0.pre4/app/views/active_admin/resource/index.html.arb (219.9ms)
+Completed 200 OK in 228ms (Views: 223.2ms | ActiveRecord: 1.8ms)
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 43]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 43]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 43]]
+  [1m[35mImage Load (0.3ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 43]]
+  [1m[36mImage Load (0.2ms)[0m  [1mSELECT "images".* FROM "images"[0m
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-17 18:36:05 +0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VWWOe7qinVmKjQLGHAYdNWaNomZWSIiKeAoUCeQ7L5Pz1DwGZnrg+CXtWEovq3X5VH+7G+VH+sgRAlKX20Y9FA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:36:05 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 8]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 10]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 11]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 12]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 13]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 14]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 15]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 16]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 17]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 18]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 19]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 20]]
+  Rendered main/index.html.erb within layouts/application (29.2ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 98.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-17 18:36:07 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/devise-i18n-1.1.0/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 110ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-12-17 18:36:21 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4YqVWe9pBogstIF9atU0D2rUdHDrNb6rZSqXSYj39gC7yyijhUW3NfVGw1nnYLz++D/FrSp3p/0XUsagEdoZIg==", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-12-17 12:36:21.398925"], ["sign_in_count", 2], ["updated_at", "2016-12-17 12:36:21.399933"], ["id", 2]]
+  [1m[36m (35.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 176ms (ActiveRecord: 35.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:36:21 +0600
+Processing by MainController#index as HTML
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?[0m  [["approved", "t"]]
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0  [["approved", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 7]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 8]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 11]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 12]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 13]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 14]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 15]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 16]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 17]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 18]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 19]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 20]]
+  Rendered main/index.html.erb within layouts/application (19.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/application/_navbar.html.erb (1.4ms)
+Completed 200 OK in 103ms (Views: 99.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/places/new" for 127.0.0.1 at 2016-12-17 18:36:23 +0600
+Processing by PlacesController#new as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered places/_place_form.html.erb (8.4ms)
+  Rendered places/new.html.erb within layouts/application (8.9ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 103.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2016-12-17 18:36:42 +0600
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO0gUeuhtBXaouA+RrwkLgbRFM+UMUI5nXBil+GCi996WU9e0+lBDsx9w8Yz55wdIux7oyJnPFtMFbO9aMYQRg==", "place"=>{"title"=>"privet", "category_id"=>"2", "description"=>"fafad ljfadfa", "user_id"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x0055655c67e9d8 @tempfile=#<Tempfile:/tmp/RackMultipart20161217-29611-ihx48y.png>, @original_filename="traveller_coffee.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"traveller_coffee.png\"\r\nContent-Type: image/png\r\n">, "eula"=>"1"}, "commit"=>"Create Place"}
+Unpermitted parameter: eula
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'image' for Place.):
+  app/controllers/places_controller.rb:8:in `create'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.8ms)
+
+
+Started PUT "/__web_console/repl_sessions/3b96d4ae64d2411b42307364c670f2db" for 127.0.0.1 at 2016-12-17 18:36:50 +0600
+
+
+Started PUT "/__web_console/repl_sessions/3b96d4ae64d2411b42307364c670f2db" for 127.0.0.1 at 2016-12-17 18:38:42 +0600
+
+
+Started POST "/places" for 127.0.0.1 at 2016-12-17 18:39:08 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO0gUeuhtBXaouA+RrwkLgbRFM+UMUI5nXBil+GCi996WU9e0+lBDsx9w8Yz55wdIux7oyJnPFtMFbO9aMYQRg==", "place"=>{"title"=>"privet", "category_id"=>"2", "description"=>"fafad ljfadfa", "user_id"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00560d84675da8 @tempfile=#<Tempfile:/tmp/RackMultipart20161217-29818-1rvvkav.png>, @original_filename="traveller_coffee.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"traveller_coffee.png\"\r\nContent-Type: image/png\r\n">, "eula"=>"1"}, "commit"=>"Create Place"}
+Unpermitted parameters: image, eula
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'place_id' for Image.):
+  app/controllers/places_controller.rb:9:in `create'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.6ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.4ms)
+
+
+Started PUT "/__web_console/repl_sessions/3a1b23c7d5100a3e7859ed338791010a" for 127.0.0.1 at 2016-12-17 18:39:34 +0600
+
+
+Started POST "/places" for 127.0.0.1 at 2016-12-17 18:46:29 +0600
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO0gUeuhtBXaouA+RrwkLgbRFM+UMUI5nXBil+GCi996WU9e0+lBDsx9w8Yz55wdIux7oyJnPFtMFbO9aMYQRg==", "place"=>{"title"=>"privet", "category_id"=>"2", "description"=>"fafad ljfadfa", "user_id"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00560d85c3fc38 @tempfile=#<Tempfile:/tmp/RackMultipart20161217-29818-cdhixm.png>, @original_filename="traveller_coffee.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"traveller_coffee.png\"\r\nContent-Type: image/png\r\n">, "eula"=>"1"}, "commit"=>"Create Place"}
+Unpermitted parameters: image, eula
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "images" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-12-17 12:46:29.605630"], ["updated_at", "2016-12-17 12:46:29.605630"]]
+  [1m[35m (56.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "places" ("title", "description", "category_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "privet"], ["description", "fafad ljfadfa"], ["category_id", 2], ["user_id", 2], ["created_at", "2016-12-17 12:46:29.665978"], ["updated_at", "2016-12-17 12:46:29.665978"]]
+  [1m[36m (60.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 118.4ms)
+
+NoMethodError (undefined method `pry' for #<Binding:0x00560d85168148>):
+  app/controllers/places_controller.rb:11:in `create'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.2ms)
+
+
+Started PUT "/__web_console/repl_sessions/81a29c5fdb3a1d22fdeea1faf7ce4473" for 127.0.0.1 at 2016-12-17 18:46:39 +0600
+
+
+Started PUT "/__web_console/repl_sessions/81a29c5fdb3a1d22fdeea1faf7ce4473" for 127.0.0.1 at 2016-12-17 18:47:01 +0600
+
+
+Started POST "/places" for 127.0.0.1 at 2016-12-17 18:53:30 +0600
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO0gUeuhtBXaouA+RrwkLgbRFM+UMUI5nXBil+GCi996WU9e0+lBDsx9w8Yz55wdIux7oyJnPFtMFbO9aMYQRg==", "place"=>{"title"=>"privet", "category_id"=>"2", "description"=>"fafad ljfadfa", "user_id"=>"2", "image"=>#<ActionDispatch::Http::UploadedFile:0x00560d812bba80 @tempfile=#<Tempfile:/tmp/RackMultipart20161217-29818-182j0pd.png>, @original_filename="traveller_coffee.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"place[image]\"; filename=\"traveller_coffee.png\"\r\nContent-Type: image/png\r\n">, "eula"=>"1"}, "commit"=>"Create Place"}
+Unpermitted parameters: image, eula
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "images" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-12-17 12:53:30.865843"], ["updated_at", "2016-12-17 12:53:30.865843"]]
+  [1m[35m (211.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "places" ("title", "description", "category_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "privet"], ["description", "fafad ljfadfa"], ["category_id", 2], ["user_id", 2], ["created_at", "2016-12-17 12:53:31.079207"], ["updated_at", "2016-12-17 12:53:31.079207"]]
+  [1m[36m (86.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 303ms (ActiveRecord: 298.8ms)
+
+NoMethodError (undefined method `pry' for #<Binding:0x00560d8121eb68>):
+  app/controllers/places_controller.rb:11:in `create'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.4ms)
+
+
+Started PUT "/__web_console/repl_sessions/0f20e3050dd05444ef588369e733a1cd" for 127.0.0.1 at 2016-12-17 18:53:36 +0600
+
+
+Started PUT "/__web_console/repl_sessions/0f20e3050dd05444ef588369e733a1cd" for 127.0.0.1 at 2016-12-17 18:54:06 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:54:18 +0600
+Processing by MainController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?[0m  [["approved", "t"]]
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0  [["approved", "t"]]
+  Rendered main/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `image' for #<Place:0x00560d82e5d720>):
+    11: 
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: 	<%= place.image %>
+    15: 	<%= link_to place.title, place_path(place.id) %> <br/>
+    16: 	<%= place.description %> <br/>
+    17: 	Rating: <%= place.rating %> <br/>
+  app/views/main/index.html.erb:14:in `block in _app_views_main_index_html_erb___1047191505845158251_47308028693880'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_47308028693880'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:54:44 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35mImage Load (0.6ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  Rendered main/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `picture' for #<Image::ActiveRecord_Associations_CollectionProxy:0x00560d85c09700>):
+    11: 
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: 	<%= place.images.picture %>
+    15: 	<%= link_to place.title, place_path(place.id) %> <br/>
+    16: 	<%= place.description %> <br/>
+    17: 	Rating: <%= place.rating %> <br/>
+  app/views/main/index.html.erb:14:in `block in _app_views_main_index_html_erb___1047191505845158251_47308040037940'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_47308040037940'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.1ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:55:16 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35mImage Load (0.5ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  Rendered main/index.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `picture' for #<Image::ActiveRecord_Associations_CollectionProxy:0x00560d86198630>):
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: 
+    15: 	<%= place.images.picture.url(:thumb) %>
+    16: 	<%= link_to place.title, place_path(place.id) %> <br/>
+    17: 	<%= place.description %> <br/>
+    18: 	Rating: <%= place.rating %> <br/>
+  app/views/main/index.html.erb:15:in `block in _app_views_main_index_html_erb___1047191505845158251_47308043530080'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_47308043530080'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.2ms)
+  [1m[36mImage Load (0.2ms)[0m  [1mSELECT  "images".* FROM "images" WHERE "images"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:57:39 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35mImage Load (0.7ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  Rendered main/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined method `picture' for #<Image::ActiveRecord_Associations_CollectionProxy:0x00560d8286b060>):
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: 
+    15: 	<%= image_tag place.images.picture.url(:thumb) %>
+    16: 	<%= link_to place.title, place_path(place.id) %> <br/>
+    17: 	<%= place.description %> <br/>
+    18: 	Rating: <%= place.rating %> <br/>
+  app/views/main/index.html.erb:15:in `block in _app_views_main_index_html_erb___1047191505845158251_47308012461420'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_47308012461420'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.6ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.8ms)
+  [1m[35mPlace Load (0.3ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 43]]
+  [1m[36mImage Load (0.6ms)[0m  [1mSELECT "images".* FROM "images" WHERE "images"."place_id" = ?[0m  [[nil, 43]]
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:59:14 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.3ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35mImage Load (0.8ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  Rendered main/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: images.place_id: SELECT "images".* FROM "images" WHERE "images"."place_id" = ?):
+    11: 
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: <% if place.images.present? %>
+    15: 	<%= image_tag place.images.picture.url(:thumb) %>
+    16: <% end %>	
+    17: 	<%= link_to place.title, place_path(place.id) %> <br/>
+  app/views/main/index.html.erb:14:in `block in _app_views_main_index_html_erb___1047191505845158251_47308032190680'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_47308032190680'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 18:59:42 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35mImage Load (0.7ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  Rendered main/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `picture' for #<Image::ActiveRecord_Associations_CollectionProxy:0x00560d851fead0>):
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: <% if !place.images.nil? %>
+    15: 	<%= image_tag place.images.picture.url(:thumb) %>
+    16: <% end %>	
+    17: 	<%= link_to place.title, place_path(place.id) %> <br/>
+    18: 	<%= place.description %> <br/>
+  app/views/main/index.html.erb:15:in `block in _app_views_main_index_html_erb___1047191505845158251_47308034366860'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_47308034366860'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-12-17 19:01:01 +0600
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-12-17 19:01:01 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/devise-i18n-1.1.0/app/views/devise/sessions/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/application/_navbar.html.erb (0.9ms)
+Completed 200 OK in 513ms (Views: 504.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/application.self-63d967674ba2d31cf0182f8a8025705147d5c3c1115f4add611c9736f75082e6.css?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-17 19:01:02 +0600
+  [1m[35mImage Load (6.9ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 43]]
+  [1m[36mImage Load (0.4ms)[0m  [1mSELECT "images".* FROM "images" WHERE "images"."place_id" = ?[0m  [[nil, 43]]
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 19:02:02 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35mImage Load (0.6ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  Rendered main/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `image' for #<Image::ActiveRecord_Associations_CollectionProxy:0x007f2854554960>):
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: <% if !place.images.nil? %>
+    15: 	<%= image_tag place.images.image.url(:thumb) %>
+    16: <% end %>	
+    17: 	<%= link_to place.title, place_path(place.id) %> <br/>
+    18: 	<%= place.description %> <br/>
+  app/views/main/index.html.erb:15:in `block in _app_views_main_index_html_erb___1047191505845158251_69905595039020'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_69905595039020'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.1ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 19:02:23 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35mImage Load (0.7ms)[0m  SELECT "images".* FROM "images" WHERE "images"."place_id" = ?  [[nil, 1]]
+  Rendered main/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: images.place_id: SELECT "images".* FROM "images" WHERE "images"."place_id" = ?):
+    12: <% @places.each do |place| %>
+    13: <div class="place col-md-3">
+    14: <% if !place.images.nil? %>
+    15: 	<%= image_tag place.images[0].image.url(:thumb) %>
+    16: <% end %>	
+    17: 	<%= link_to place.title, place_path(place.id) %> <br/>
+    18: 	<%= place.description %> <br/>
+  app/views/main/index.html.erb:15:in `block in _app_views_main_index_html_erb___1047191505845158251_69905602300520'
+  app/views/main/index.html.erb:12:in `_app_views_main_index_html_erb___1047191505845158251_69905602300520'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+Processing by MainController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?  [["approved", "t"]]
+  [1m[36mPlace Load (0.2ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0[0m  [["approved", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 4]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 8]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 10]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 11]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 12]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 13]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 14]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 15]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 16]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 17]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 18]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 19]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 20]]
+  Rendered main/index.html.erb within layouts/application (25.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/application/_navbar.html.erb (1.4ms)
+Completed 200 OK in 102ms (Views: 98.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/main.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/application.self-63d967674ba2d31cf0182f8a8025705147d5c3c1115f4add611c9736f75082e6.css?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:08 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-17 19:03:09 +0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-12-17 19:03:28 +0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ESSoxwBu/MpX3HUPXqQVXUXJpRWPAFQaM9jgNdAHZUXfkMfIOCYJ0UEDVvcr/61uYfTKeTlWKnjivTEfWUP+3A=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-17 19:03:28 +0600
+Processing by MainController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "places" WHERE "places"."approved" = ?[0m  [["approved", "t"]]
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."approved" = ? LIMIT 20 OFFSET 0  [["approved", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 8]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 9]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 11]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 12]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 13]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 14]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 15]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 16]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 17]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 18]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 19]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 20]]
+  Rendered main/index.html.erb within layouts/application (16.5ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 95.3ms | ActiveRecord: 1.3ms)

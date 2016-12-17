@@ -13,7 +13,16 @@
     <%= f.text_field :description, required: true %><br />
    	<%= f.hidden_field :user_id, :value => current_user.id %>
 
-   	<div>
+   	
+   	<div class="field">
+   	<%= f.fields_for :images do |p| %>
+     
+       <%= p.label :picture %><br>
+       <%= p.file_field :picture %>
+     
+   <% end %>
+
+   	</div>
    	<p>
    	By sumbmitting this form, you agree that the following information
    	will be submitted tot he public domain, and administrators of this
