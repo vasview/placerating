@@ -1,7 +1,7 @@
 <h1>All places</h1>
 <p>Select category: All,
 <% @categories.each do |cat| %>
-	<%= link_to(cat.name + ',') %>
+	<%= link_to cat.name, root_path(@places.where(category_id: cat.id)) %>
 <% end %>
 </p>
 
