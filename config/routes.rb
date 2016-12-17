@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+
   ActiveAdmin.routes(self)
   
   root 'main#index'
 
   get "place/:id" => 'main#show' , as: :place
+
+  resources :places, only: [:new, :create, :destroy]
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

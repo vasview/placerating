@@ -19,8 +19,9 @@
           <p class="navbar-text">
             Hello, <%= link_to current_user.name, edit_user_registration_path(current_user), class: 'navbar-link' %>
             </p>
-            <%= link_to "Profile", edit_user_registration_path(current_user), class: 'btn btn-default navbar-btn' %>
+            
             <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'btn btn-default navbar-btn' %>
+            <%= link_to "Add new place", new_place_path, class: 'btn btn-default navbar-btn' %>
 
         <% else %>
           <%= link_to 'Sing up', new_user_registration_path, class: 'btn btn-default navbar-btn' %>

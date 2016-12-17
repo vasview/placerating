@@ -13,7 +13,8 @@
 <div class="place col-md-3">
 	<%= link_to place.title, place_path(place.id) %> <br/>
 	<%= place.description %> <br/>
-	Rating: <%= place.rating %>
+	Rating: <%= place.rating %> <br/>
+	(<%= place.rating %>, <%= place.reviews.count %> reviews)
 </div>
 <% end %>
 </div>

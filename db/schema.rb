@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161217105328) do
+ActiveRecord::Schema.define(version: 20161217121940) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -55,9 +55,13 @@ ActiveRecord::Schema.define(version: 20161217105328) do
     t.datetime "updated_at",  null: false
     t.integer  "category_id"
     t.float    "rating"
+    t.integer  "user_id"
+    t.boolean  "approved"
+    t.boolean  "eula"
   end
 
   add_index "places", ["category_id"], name: "index_places_on_category_id"
+  add_index "places", ["user_id"], name: "index_places_on_user_id"
 
   create_table "reviews", force: :cascade do |t|
     t.text     "body"

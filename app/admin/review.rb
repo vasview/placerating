@@ -13,5 +13,5 @@ ActiveAdmin.register Review do
 #   permitted
 # end
 
-
+permit_params :body, :food_quality, :service_quality, :interior_mark, :user_id, :place_id
 end

@@ -1,0 +1,30 @@
+<%= form_for @place do |f| %>
+
+<div class="col-md-12">
+
+  
+  <div class="col-md-6 col-sm-6 show-place-details">
+    <%= f.label :title, "Наименование: "%>
+    <%= f.text_field :title, required: true %><br />
+    <%= f.label :category_id, "Категория" %>
+    <%= f.collection_select :category_id, Category.all, :id, :name, {:include_blank => 'выберите Категорию'}, required: true %><br />
+       
+    <%= f.label :description, "Описание: " %>
+    <%= f.text_field :description, required: true %><br />
+   	<%= f.hidden_field :user_id, :value => current_user.id %>
+
+   	<div>
+   	<p>
+   	By sumbmitting this form, you agree that the following information
+   	will be submitted tot he public domain, and administrators of this
+   	site will have full control over the said information.
+   	</p>
+   	<%= f.label :eula, "I understand" %>
+   	<%= f.check_box :eula, required: true %>
+
+   	</div>
+    <%= f.submit %>
+   
+</div>
+
+<% end %>
