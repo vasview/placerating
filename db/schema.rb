@@ -11,7 +11,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161217061955) do
+ActiveRecord::Schema.define(version: 20161217065450) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  add_index "images", ["user_id"], name: "index_images_on_user_id"
+
+  create_table "places", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "category_id"
+  end
+
+  add_index "places", ["category_id"], name: "index_places_on_category_id"
+
+  create_table "reviews", force: :cascade do |t|
+    t.text     "body"
+    t.integer  "food_quality"
+    t.integer  "service_quality"
+    t.integer  "interior_mark"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "user_id"
+    t.integer  "place_id"
+  end
+
+  add_index "reviews", ["place_id"], name: "index_reviews_on_place_id"
+  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
 
   create_table "roles", force: :cascade do |t|
     t.string   "name"
