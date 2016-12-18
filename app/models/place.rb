@@ -9,5 +9,5 @@ class Place < ActiveRecord::Base
 	validates :description, presence: true, length: { maximum: 250 }
 	validates :user_id, presence: true
 	validates :category_id, presence: true
-	validates :eula, acceptance: true
+	validates :eula, acceptance: {accept: true}
 end

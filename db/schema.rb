@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20161217121940) do
     t.string   "title"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+    t.integer  "place_id"
     t.integer  "user_id"
     t.string   "picture_file_name"
     t.string   "picture_content_type"
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 20161217121940) do
     t.datetime "picture_updated_at"
   end
 
+  add_index "images", ["place_id"], name: "index_images_on_place_id"
   add_index "images", ["user_id"], name: "index_images_on_user_id"
 
   create_table "places", force: :cascade do |t|

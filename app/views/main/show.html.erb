@@ -2,4 +2,9 @@
 
 <%= @place.description %>
 Rating: <%= @place.rating %> <br/>
-(<%= @place.rating %>, <%= @place.reviews.count %> reviews)
+(<%= @place.rating %>, <%= @place.reviews.count %> reviews) 
+<% if !@place.images.empty? %>
+	<% @place.images.each do |image| %>
+		<%= image_tag image.picture.url(:thumb) %>
+	<% end %>
+<% end %>	

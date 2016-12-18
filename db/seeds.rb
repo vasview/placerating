@@ -36,7 +36,7 @@ puts "Categories were created successfully"
 
 # Create Places
 
-40.times do
+50.times do
     Place.create( title:   	  Faker::Company.name,
                 description:  Faker::Lorem.sentence,
                 category_id:  rand(1..categories.size),
@@ -48,7 +48,7 @@ puts "Places were created successfully"
 
 # Create Reviews
 
-100.times do 
+120.times do 
 	Review.create( body: Faker::Lorem.sentence,
 					food_quality: rand(1..5),
 					service_quality: rand(1..5),

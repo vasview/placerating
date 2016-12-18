@@ -10,7 +10,7 @@ class MainController < ApplicationController
   end
 
   def selected_category
-  	@places = Place.where(category_id: params[:id]).paginate(page:params[:page])
+  	@places = Place.where(category_id: params[:id]).paginate(page:params[:page], :per_page => 20)
     respond_to do |format|
       format.js {}
     end
