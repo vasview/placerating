@@ -48765,3 +48765,1840 @@ Processing by MainController#show as HTML
   Rendered main/show.html.erb within layouts/application (6.0ms)
   Rendered layouts/application/_navbar.html.erb (0.4ms)
 Completed 200 OK in 117ms (Views: 115.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 03:45:48 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (45.5ms)
+  Rendered layouts/application/_navbar.html.erb (4.6ms)
+Completed 200 OK in 580ms (Views: 549.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 03:45:48 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 03:45:49 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 03:50:10 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (24.8ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `review' for #<#<Class:0x005628bdbce530>:0x007ff15664d8f0>):
+    53: 	<div class="col-md-12 col-lg-12 add_review">
+    54: 		<h3> Add review </h3>
+    55: 		<div class="col-md-12 col-lg-12 add_review_body" >
+    56: 			<%= form_for @place.build(review) do |f|%>
+    57: 			<% end %>
+    58: 		</div>
+    59: 
+  app/views/main/show.html.erb:56:in `_app_views_main_show_html_erb__161119632488817324_70337256645340'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.8ms)
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 03:53:12 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (94.5ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `place_reviews_path' for #<#<Class:0x005628bdbce530>:0x007ff1571fc340>):
+    53: 	<div class="col-md-12 col-lg-12 add_review">
+    54: 		<h3> Add review </h3>
+    55: 		<div class="col-md-12 col-lg-12 add_review_body" >
+    56: 			<%= form_for [@place, @place.reviews.build] do |f|%>
+    57: 			<% end %>
+    58: 		</div>
+    59: 
+  app/views/main/show.html.erb:56:in `_app_views_main_show_html_erb__161119632488817324_47366534866840'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.3ms)
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 03:59:20 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (44.1ms)
+  Rendered layouts/application/_navbar.html.erb (4.5ms)
+Completed 200 OK in 488ms (Views: 452.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:21 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:22 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:22 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:22 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:22 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 03:59:22 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:00:14 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.2ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (95.7ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 190ms (Views: 186.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:15 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (9.8ms)
+  Rendered layouts/application/_navbar.html.erb (0.8ms)
+Completed 200 OK in 118ms (Views: 116.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:37 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:00:38 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:02:19 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (8.9ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 113ms (Views: 111.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:20 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mImage Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mReview Load (0.1ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?[0m  [["place_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (9.9ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:02:40 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:13:49 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlace Load (0.1ms)[0m  SELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered main/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/home/vas/rubycoarse/CW/Control_final/placerating/app/views/main/show.html.erb:59: syntax error, unexpected ',', expecting ')'
+...quality, [[1, '1'], [2, '2']]), required: true );@output_buf...
+...                               ^):
+  app/views/main/show.html.erb:59: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.1ms)
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:18:02 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mImage Exists (0.1ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `option_for_select' for #<#<Class:0x0055a195df9760>:0x007fc7cc39c0b0>):
+    56: 			<%= form_for [@place, @place.reviews.build] do |f|%>
+    57: 				<%= f.text_area :body %> <br/>
+    58: 				<%= f.label :food_quality %>
+    59: 				<%= f.select :food_quality, option_for_select([['1', 1], ['2', 2]]), required: true %>
+    60: 				<%= f.label :service_quality %>
+    61: 				<%= f.label :interior_mark %>
+    62: 			<% end %>
+  app/views/main/show.html.erb:59:in `block in _app_views_main_show_html_erb__238700896734287742_70248242017840'
+  app/views/main/show.html.erb:56:in `_app_views_main_show_html_erb__238700896734287742_70248242017840'
+
+
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/vas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.3ms)
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:19:17 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mImage Exists (0.3ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (95.2ms)
+  Rendered layouts/application/_navbar.html.erb (0.3ms)
+Completed 200 OK in 185ms (Views: 182.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:18 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:19 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:19 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:19 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:19:19 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mImage Exists (0.4ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/application/_navbar.html.erb (0.9ms)
+Completed 200 OK in 109ms (Views: 106.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:02 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:20:03 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mImage Exists (0.1ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mReview Load (0.1ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (8.5ms)
+  Rendered layouts/application/_navbar.html.erb (0.5ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:08 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:09 +0600
+
+
+Started GET "/place/1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+Processing by MainController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.1ms)[0m  [1mSELECT  "places".* FROM "places" WHERE "places"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mImage Exists (0.1ms)[0m  SELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1  [["place_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "images" WHERE "images"."place_id" = ? LIMIT 1[0m  [["place_id", 1]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."place_id" = ?  [["place_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered main/show.html.erb within layouts/application (11.6ms)
+  Rendered layouts/application/_navbar.html.erb (0.4ms)
+Completed 200 OK in 114ms (Views: 112.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/active_admin.self-9f96032d123f22d44fb1e30d084db171ec2aa1f7a29b2ed29b5d16eae4d42c53.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/main.self-e9b0016704222aa0b1f908e1039f6a6052194f4fbf6ad542e031a4417c9cc526.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/application.self-878ada9e86199fb674f56f5f8a3d289b8e8c37d1bed29dbddaad5dfecb880b68.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/places.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:58 +0600
+
+
+Started GET "/assets/active_admin/jquery_ui.self-01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-fbed82dc1e31cf860056cce6c02f5bc5831ad5343d68ac3ab17471c9e05e9195.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-8ccb356121a1c40094bb429d6cfac85d9c8ad114fb93730892d9df9986730a0a.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.self-f5c360e8640b40f00640f6e5c7cfe0addeb244ed72e1a9828c52919515d23cf1.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/initializers/datepicker.self-f8ac66c85afd35ee1555c09a2418efc7a7930e1f6dd783461379c2bb2184f80e.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/initializers/filters.self-32bfae855dd5b3ae411a41daa2081625c6f9500958554e31a2decc297f13398b.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin/initializers/tabs.self-65de8b1688d4f8782c04bf07ba6314d3c8b33b9391a482a07214ac4df99dd904.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/main.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/places.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-12-19 04:21:59 +0600

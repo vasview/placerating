@@ -49,4 +49,22 @@
 		</div>	
 		<% end %> 
 	</div>
+
+	<div class="col-md-12 col-lg-12 add_review">
+		<h3> Add review </h3>
+		<div class="col-md-12 col-lg-12 add_review_body" >
+			<%= form_for [@place, @place.reviews.build] do |f|%>
+				<%= f.text_area :body %> <br/>
+				<%= f.label :food_quality %>
+				<%= f.select :food_quality, options_for_select([['1', 1], ['2', 2], ['3', 3],['4', 4], ['5', 5]]), required: true %>
+				<%= f.label :service_quality %>
+				<%= f.select :service_quality, options_for_select([['1', 1], ['2', 2], ['3', 3],['4', 4], ['5', 5]]), required: true %>
+				<%= f.label :interior_mark %>
+				<%= f.select :interior_mark, options_for_select([['1', 1], ['2', 2], ['3', 3],['4', 4], ['5', 5]]), required: true %>
+
+				<%= f.submit %>
+			<% end %>
+		</div>
+
+	</div>
 </div>

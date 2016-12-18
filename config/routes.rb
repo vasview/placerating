@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   get "category/:id" => 'main#selected_category', as: :category
 
-  resources :places, only: [:new, :create, :destroy]
+  resources :places, only: [:new, :create, :destroy] do 
+    resources :reviews
+  end
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
