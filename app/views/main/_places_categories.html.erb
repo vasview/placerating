@@ -1,4 +1,4 @@
-<div class="container">
+<div class="row">
 <%= will_paginate @places %>
 <div class="col-sm-12 col-md-12 col-lg-12">
 	<% @places.each do |place| %>
@@ -10,10 +10,13 @@
 					<%= link_to image_tag(place.images.first.picture.url(:thumb)), place_path(place.id) %>
 				<% 	end %>
 			</div>
+			<div>
 			<%= link_to place.title, place_path(place.id) %> <br/>
-			<%= place.description %> <br/>
+			
 			Rating: <%= place.rating %> <br/>
-			(<%= place.rating %>, <%= place.reviews.count %> reviews) <br/>
+			(<%= place.rating %>, <%= place.reviews.count %> reviews)<br/>
+			Photos: <%= place.images.size %>
+			</div>
 		</div>
 	<% end %>
 </div>

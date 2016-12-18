@@ -2,6 +2,7 @@
 	<div class="col-md-12 col-lg-12">
 		<div class="col-md-4 col-lg-4">
 			<h2><%= @place.title %></h2>
+			<h4><%= @place.category.name %></h4>
 			<div class="show_place_description">
 				<%= @place.description %>
 			</div>
@@ -66,5 +67,9 @@
 			<% end %>
 		</div>
 
+	</div>
+
+	<div class="col-md-12 col-lg-12 add_new_photo">
+		<%= file_field_tag "pictures[]", type: :file, multiple: true %>
 	</div>
 </div>
