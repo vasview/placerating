@@ -8,10 +8,8 @@ class PlacesController < ApplicationController
   	@place = Place.new(place_params)
 
   	if @place.save
-      if params[:pictures]
-        params[:pictures].each do |picture|
-          @place.images.create(picture: picture, user_id: current_user.id)
-        end  
+      if params[:picture]
+          @place.images.create(picture: params[:picture], user_id: current_user.id)
       end    
   		flash[:success] = "Your message is being moderated, it will be added as soon as Administrator appoves it!"
   		redirect_to root_path

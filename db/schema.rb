@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161217121940) do
+ActiveRecord::Schema.define(version: 20161218203128) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -53,13 +53,16 @@ ActiveRecord::Schema.define(version: 20161217121940) do
   create_table "places", force: :cascade do |t|
     t.string   "title"
     t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.integer  "category_id"
     t.float    "rating"
     t.integer  "user_id"
     t.boolean  "approved"
     t.boolean  "eula"
+    t.float    "food_quality_rating"
+    t.float    "service_quality_rating"
+    t.float    "interior_quality_rating"
   end
 
   add_index "places", ["category_id"], name: "index_places_on_category_id"
