@@ -1,0 +1,12 @@
+<div class="">	
+	<%= review.created_at.strftime("%F at %H:%M") %>,
+	<%= review.user.name %> said: 
+	<div class="">
+		<%= review.body %>
+	</div>
+	<div class="">
+		Quality of food: <%= review.food_quality %><br/>
+		Service quality: <%= review.service_quality %><br/>
+		Interior: <%= review.interior_mark %><br/>
+	</div><br/>
+</div>	

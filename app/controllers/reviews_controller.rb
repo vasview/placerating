@@ -1,9 +1,9 @@
 class ReviewsController < ApplicationController
-  
+  before_action :authenticate_user!
+
   def create
   	@place = Place.find(params[:place_id])
   	@review = @place.reviews.create(review_params)
-
   	respond_to do |format|
   		format.js {}
   	end 
