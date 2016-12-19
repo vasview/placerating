@@ -26,10 +26,10 @@
 	</div>	
 	<div class="col-md-12 col-lg-12 place_rating_average">
 		<h3> Rating: </h3>
-		Overall: <%= @place.rating %> <br/>
-		Quality of food: <%= @place.food_quality_rating %><br/>
-		Service quality: <%= @place.service_quality_rating %><br/>
-		Interior: <%= @place.interior_quality_rating %><br/>
+		Overall: <span id="place_average_rating"> <%= @place.rating %></span> <br/>
+		Quality of food: <span id="place_avg_food_quality"><%= @place.food_quality_rating %></span> <br/>
+		Service quality: <span id="place_avg_service_quality"><%= @place.service_quality_rating %></span><br/>
+		Interior: <span id="place_avg_interior_quality"><%= @place.interior_quality_rating %></span><br/>
 	</div>
 
 	<div class="col-md-12 col-lg-12 show_place_all_reviews">

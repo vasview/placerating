@@ -1,2 +1,6 @@
 $(".show_place_all_reviews").append("<%= escape_javascript(render partial: 'review_show', locals: {review: @review}) %>");
 $("#review_body").val('');
+$("#place_average_rating").html('<%= @place.rating %>');
+$("#place_avg_food_quality").html('<%= @place.food_quality_rating %>');
+$("#place_avg_service_quality").html('<%= @place.service_quality_rating %>');
+$("#place_avg_interior_quality").html('<%= @place.interior_quality_rating %>');
