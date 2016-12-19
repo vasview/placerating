@@ -8,6 +8,7 @@
 		<%= f.select :service_quality, options_for_select([['1', 1], ['2', 2], ['3', 3],['4', 4], ['5', 5]]), required: true %>
 		<%= f.label :interior_mark %>
 		<%= f.select :interior_mark, options_for_select([['1', 1], ['2', 2], ['3', 3],['4', 4], ['5', 5]]), required: true %>
+		
 		<%= f.hidden_field :user_id, :value => current_user.id %>
 
 		<%= f.submit %>

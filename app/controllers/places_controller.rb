@@ -1,5 +1,6 @@
 class PlacesController < ApplicationController
   before_action :authenticate_user!
+  
   def new
   	@place = Place.new
   end
