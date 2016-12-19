@@ -1,8 +1,11 @@
-<h1>All places</h1>
+<div class="" id="main_index_title">
+	<h1>All places</h1>
+</div>
 <p>Select category: <%= link_to "All,", root_path %>
-<% @categories.each do |cat| %>
-	<%= link_to cat.name + ',', category_path(cat.id), remote: true %>
+<% for category in @categories[0...(@categories.size-1)] %>
+	<%= link_to category.name, category_path(category.id), remote: true %>, 
 <% end %>
+<%= link_to @last_category.name, category_path(@last_category.id), remote: true %>
 </p>
 <div class="container places">
 	<%= render 'places_categories' %>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'reviews/create'
+
   ActiveAdmin.routes(self)
   
   root 'main#index'

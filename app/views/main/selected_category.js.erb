@@ -1,3 +1,4 @@
-$('.places').html('')
+$('.places').html('');
 
 $(".places").html("<%= escape_javascript(render partial: 'places_categories') %>");
+$("#main_index_title").html("<h1><%= @category.name %></h1>");
